@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "scripts": {
-    "start": "node index.js",
-    "build": "cross-env NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
