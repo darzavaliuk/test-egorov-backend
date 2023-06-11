@@ -5,7 +5,7 @@ const product = require('./api/product')
 
 app.use(express.json()); 
 
-app.use("/api/subscribe", product)
+app.use("/api/product", product)
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.post('/subscribe', (req, res) => {
+app.post('/product', (req, res) => {
   const { email } = req.body;
   console.log("get")
   console.log(req.body)
