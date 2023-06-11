@@ -41,7 +41,7 @@ router.post('/api/product', (req, res) => {
     console.log("get")
     console.log(req.body)
     transporter.sendMail({
-      from: process.env.USER,
+      from: "Daria Zavaliuk",
       to: email,
       subject: 'Вы подписались на рассылку',
       text: 'Спасибо за подписку! Теперь вы будете регулярно получать новости на почту.'
