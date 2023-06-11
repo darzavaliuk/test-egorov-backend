@@ -36,7 +36,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/api/product', (req, res) => {
     const { email } = req.body;
     console.log("get")
     console.log(req.body)
